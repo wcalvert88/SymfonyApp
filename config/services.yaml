@@ -32,9 +32,9 @@ services:
     #     arguments:
     #        $message: '%hello_message%' 
 
-    # app.greeting:
-    #     public: true
-    #     alias: App\Service\Greeting
+    app.greeting:
+        public: true
+        alias: App\Service\Greeting
 
     # App\Controller\BlogController: ['@App\Service\Greeting']
 
