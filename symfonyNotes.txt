@@ -1,5 +1,9 @@
 symfony notes
 
+debug container
+	php bin/console debug:container 'container to debug here'
+	brings up the debug:container for container specified
+
 composer server OR symfony/web-server-bundle
 	./bin/console server:run
 
@@ -17,3 +21,11 @@ doctrine
 
 	php bin/console doctrine:migrations:migrate prev
 	this reverts to previous version
+
+	php bin/console doctrine:migrations:migrate next
+	this brings back the next version
+
+	both can end with --no-interaction to get rid of asking are you sure
+
+	composer require --dev doctrine/doctrine-fixtures-bundle
+	can create fixtures which are fake data
