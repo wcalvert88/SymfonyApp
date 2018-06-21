@@ -1,0 +1,19 @@
+symfony notes
+
+composer server OR symfony/web-server-bundle
+	./bin/console server:run
+
+logger
+	tail -f var/log/dev.log
+
+mysql://db_user:db_password@127.0.0.1:3306/db_name
+
+doctrine
+	php bin/console doctrine:migrations:diff
+	this builds a version file with commands to build and drop table
+
+	php bin/console doctrine:migrations:migrate
+	this makes changes to the table from your version file
+
+	php bin/console doctrine:migrations:migrate prev
+	this reverts to previous version
